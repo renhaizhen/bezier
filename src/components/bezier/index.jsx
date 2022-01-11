@@ -180,7 +180,7 @@ class Bezier extends Component {
         const { pointO } = this.props;
         return (
         <div>
-            <canvas id="canvas" ref={r => (this.canvas = r)} style={styles.canvas} width="600" height="600" class="bezier">你的浏览器不支持canvas</canvas>
+            <canvas id="canvas" ref={r => (this.canvas = r)} style={styles.canvas} width="600" height="600">你的浏览器不支持canvas</canvas>
             <pre id="code" style={styles.code} ref={r => (this.code = r)} >code</pre>
             <div style={styles.box}>
                 <div>x:<input type="text" ref={r => (this.inputX = r)} onChange={this.shake(this.getBezierXY.bind(this),500)}/></div>
